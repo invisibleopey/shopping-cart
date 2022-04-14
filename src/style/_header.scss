@@ -1,0 +1,44 @@
+@import 'variables';
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  background: $primary-color;
+  padding: 10px;
+  span {
+    font-size: 2rem;
+    align-self: center;
+    color: $secondary-color;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    a {
+      color: $white;
+      text-decoration: none;
+      font-size: 1.3em;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+    button {
+      border: none;
+      border-radius: 500px;
+      padding: 10px;
+      cursor: pointer;
+      .cart-icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .App-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
