@@ -4,6 +4,7 @@
     img {
       width: 100%;
       height: auto;
+      border-radius: 5px;
     }
     span {
       font-size: 0.7rem;
@@ -28,6 +29,20 @@
       padding: 16px 32px;
       border: none;
       border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    .right,
+    .left {
+      width: 50%;
     }
   }
 }
