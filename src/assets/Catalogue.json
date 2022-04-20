@@ -1,0 +1,109 @@
+{
+  "customCatalogue": [
+    {
+      "url": "/catalogue/bucket-hat.jpg",
+      "alt": "black and white bucket hat",
+      "title": "Unisex Double-Sided Reersible Bucket Hat Black-White",
+      "price": 2899,
+      "category": "accessories"
+    },
+    {
+      "url": "/catalogue/purse.jpg",
+      "alt": "brown clutch purse",
+      "title": "Spacious Classic Men PU Leather Clutch Bag/Wallet With Zip, Wrist Strap",
+      "price": 7300,
+      "category": "accessories"
+    },
+    {
+      "url": "/catalogue/shades.jpg",
+      "alt": "polarized sunglasses",
+      "title": "LouisWill Shades OverSized Polarized Sunglasses For Men",
+      "price": 4000,
+      "category": "accessories"
+    },
+    {
+      "url": "/catalogue/skinny-jeans.jpg",
+      "alt": "black skinny jeans",
+      "title": "Defacto Man Super Skinny Fit Denim Trousers - Black",
+      "price": 5196,
+      "category": "jeans"
+    },
+    {
+      "url": "/catalogue/regular-jeans.jpg",
+      "alt": "black regular jeans",
+      "title": "Defacto Man Regular Fit Denim Trousers - Black",
+      "price": 5429,
+      "category": "jeans"
+    },
+    {
+      "url": "/catalogue/blue-jeans.jpg",
+      "alt": "blue skinny jeans",
+      "title": "Defacto Man Super Skinny Fit Denim Trousers - Blue",
+      "price": 9580,
+      "category": "jeans"
+    },
+    {
+      "url": "/catalogue/club-de-nuit.jpg",
+      "alt": "clun de nuit perfume",
+      "title": "Armaf Club De Nuit Intense Man 105ml EDT",
+      "price": 22500,
+      "category": "perfume"
+    },
+    {
+      "url": "/catalogue/sean-john.jpg",
+      "alt": "sean john perfume",
+      "title": "Sean John Unforgivable For Men (EDT) - 75ml",
+      "price": 17000,
+      "category": "perfume"
+    },
+    {
+      "url": "/catalogue/aqua.jpg",
+      "alt": "calvin klein aqua perfume",
+      "title": "Calvin Klein Eternity Aqua EDT 100ml For Men",
+      "price": 29000,
+      "category": "perfume"
+    },
+    {
+      "url": "/catalogue/odd-quality.jpg",
+      "alt": "white t-shirt",
+      "title": "I'm Odd Quality Cotton  T-Shirt (White)",
+      "price": 4300,
+      "category": "shirts"
+    },
+    {
+      "url": "/catalogue/keyboard-design.jpg",
+      "alt": "white t-shirt with keyboard design",
+      "title": "MENS Quality Single Round Neck T-shirt With Design Keyboard",
+      "price": 4400,
+      "category": "shirts"
+    },
+    {
+      "url": "/catalogue/bike-pattern.jpg",
+      "alt": "white t-shirt with bike pattern",
+      "title": "MENS Quality Single Round Neck T-shirt With Design Bike",
+      "price": 4600,
+      "category": "shirts"
+    },
+    {
+      "url": "/catalogue/adidas.jpg",
+      "alt": "army green sneakers",
+      "title": "Adidas ORIGINALS ZX 2K BOOST 2.0 TRA SNEAKERS",
+      "price": 38000,
+      "category": "sneakers"
+    },
+    {
+      "url": "/catalogue/nike.jpg",
+      "alt": "white and blue sneakers",
+      "title": "Nike Air Max Zephyr Men's Sneakers",
+      "price": 32000,
+      "category": "sneakers"
+    },
+    {
+      "url": "/catalogue/af1.jpg",
+      "alt": "white air force 1 sneakers",
+      "title": "Nike - AF1-TYPE SP20 - SNEAKERS - WHITE",
+      "price": 25000,
+      "category": "sneakers"
+    }
+  ]
+}
