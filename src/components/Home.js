@@ -1,7 +1,10 @@
 import React from 'react';
 import picture from '../assets/picture.jpg';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  let navigate = useNavigate();
+
   return (
     <div className="home">
       <div className="left">
@@ -20,7 +23,13 @@ function Home() {
       <div className="right">
         <span>Best online store of the year</span>
         <h1>We are fashion! We will clad you in the flyest garbs.</h1>
-        <button>Shop Now</button>
+        <button
+          onClick={() => {
+            navigate('/shop');
+          }}
+        >
+          Shop Now
+        </button>
       </div>{' '}
     </div>
   );
