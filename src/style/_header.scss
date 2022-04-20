@@ -23,6 +23,9 @@
     a:hover {
       color: $secondary-color;
     }
+    a.active {
+      color: $secondary-color;
+    }
     button {
       border: none;
       border-radius: 500px;
