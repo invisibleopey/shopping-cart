@@ -1,4 +1,4 @@
-@import 'resets', 'header', 'variables', 'footer', 'home';
+@import 'resets', 'header', 'variables', 'footer', 'home', 'shop';
 
 body {
   margin: 0;
@@ -7,6 +7,7 @@ body {
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(233, 236, 253);
 }
 
 code {
@@ -16,7 +17,6 @@ code {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: rgb(233, 236, 253);
 }
 
 .not-found {
