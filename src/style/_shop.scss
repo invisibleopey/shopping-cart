@@ -41,3 +41,15 @@
     }
   }
 }
+
+.nav-bar {
+  margin: 1rem;
+  span {
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
