@@ -5,8 +5,8 @@ import Card from './Card';
 function Catalogue() {
   return (
     <section className="cards">
-      {data.customCatalogue.map((card, index) => {
-        return <Card card={card} index={index} />;
+      {data.customCatalogue.map((card, id) => {
+        return <Card card={card} id={id} key={id} />;
       })}
     </section>
   );
