@@ -1,6 +1,7 @@
 {
   "customCatalogue": [
     {
+      "id": 1,
       "url": "/catalogue/bucket-hat.jpg",
       "alt": "black and white bucket hat",
       "title": "Unisex Double-Sided Reersible Bucket Hat Black-White",
@@ -8,6 +9,7 @@
       "category": "accessories"
     },
     {
+      "id": 2,
       "url": "/catalogue/purse.jpg",
       "alt": "brown clutch purse",
       "title": "Spacious Classic Men PU Leather Clutch Bag/Wallet With Zip, Wrist Strap",
@@ -15,6 +17,7 @@
       "category": "accessories"
     },
     {
+      "id": 3,
       "url": "/catalogue/shades.jpg",
       "alt": "polarized sunglasses",
       "title": "LouisWill Shades OverSized Polarized Sunglasses For Men",
@@ -22,6 +25,7 @@
       "category": "accessories"
     },
     {
+      "id": 4,
       "url": "/catalogue/skinny-jeans.jpg",
       "alt": "black skinny jeans",
       "title": "Defacto Man Super Skinny Fit Denim Trousers - Black",
@@ -29,6 +33,7 @@
       "category": "jeans"
     },
     {
+      "id": 5,
       "url": "/catalogue/regular-jeans.jpg",
       "alt": "black regular jeans",
       "title": "Defacto Man Regular Fit Denim Trousers - Black",
@@ -36,6 +41,7 @@
       "category": "jeans"
     },
     {
+      "id": 6,
       "url": "/catalogue/blue-jeans.jpg",
       "alt": "blue skinny jeans",
       "title": "Defacto Man Super Skinny Fit Denim Trousers - Blue",
@@ -43,6 +49,7 @@
       "category": "jeans"
     },
     {
+      "id": 7,
       "url": "/catalogue/club-de-nuit.jpg",
       "alt": "clun de nuit perfume",
       "title": "Armaf Club De Nuit Intense Man 105ml EDT",
@@ -50,6 +57,7 @@
       "category": "perfume"
     },
     {
+      "id": 8,
       "url": "/catalogue/sean-john.jpg",
       "alt": "sean john perfume",
       "title": "Sean John Unforgivable For Men (EDT) - 75ml",
@@ -57,6 +65,7 @@
       "category": "perfume"
     },
     {
+      "id": 9,
       "url": "/catalogue/aqua.jpg",
       "alt": "calvin klein aqua perfume",
       "title": "Calvin Klein Eternity Aqua EDT 100ml For Men",
@@ -64,6 +73,7 @@
       "category": "perfume"
     },
     {
+      "id": 10,
       "url": "/catalogue/odd-quality.jpg",
       "alt": "white t-shirt",
       "title": "I'm Odd Quality Cotton  T-Shirt (White)",
@@ -71,6 +81,7 @@
       "category": "shirts"
     },
     {
+      "id": 11,
       "url": "/catalogue/keyboard-design.jpg",
       "alt": "white t-shirt with keyboard design",
       "title": "MENS Quality Single Round Neck T-shirt With Design Keyboard",
@@ -78,6 +89,7 @@
       "category": "shirts"
     },
     {
+      "id": 12,
       "url": "/catalogue/bike-pattern.jpg",
       "alt": "white t-shirt with bike pattern",
       "title": "MENS Quality Single Round Neck T-shirt With Design Bike",
@@ -85,6 +97,7 @@
       "category": "shirts"
     },
     {
+      "id": 13,
       "url": "/catalogue/adidas.jpg",
       "alt": "army green sneakers",
       "title": "Adidas ORIGINALS ZX 2K BOOST 2.0 TRA SNEAKERS",
@@ -92,6 +105,7 @@
       "category": "sneakers"
     },
     {
+      "id": 14,
       "url": "/catalogue/nike.jpg",
       "alt": "white and blue sneakers",
       "title": "Nike Air Max Zephyr Men's Sneakers",
@@ -99,6 +113,7 @@
       "category": "sneakers"
     },
     {
+      "id": 15,
       "url": "/catalogue/af1.jpg",
       "alt": "white air force 1 sneakers",
       "title": "Nike - AF1-TYPE SP20 - SNEAKERS - WHITE",
