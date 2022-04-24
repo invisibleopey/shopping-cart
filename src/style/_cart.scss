@@ -1,0 +1,23 @@
+[data-reach-dialog-content] {
+  position: fixed;
+  width: 30vw !important;
+  top: 0px;
+  right: 0px;
+  margin: 0 !important;
+  height: 100vh;
+  padding: none !important;
+  background-color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  [data-reach-dialog-content] {
+    width: 50vw !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  [data-reach-dialog-content] {
+    width: 100vw !important;
+    position: relative;
+  }
+}
