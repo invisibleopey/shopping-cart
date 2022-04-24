@@ -12,14 +12,8 @@ function Modal() {
 
   return (
     <Dialog aria-labelledby="label" onDismiss={onDismiss}>
-      <div
-        style={{
-          display: 'grid',
-          justifyContent: 'center',
-          padding: '8px 8px',
-        }}
-      >
-        <h1>CONTENT OF THE MODAL</h1>
+      <div className="modal-content">
+        <span>CONTENT OF THE MODAL</span>
         <button style={{ display: 'block' }} onClick={onDismiss}>
           Close
         </button>
