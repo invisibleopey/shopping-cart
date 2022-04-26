@@ -21,10 +21,12 @@ const App = () => {
   const [cart, setCart] = useState([]);
 
   const addToCart = (event, count) => {
+    const targetId = Number(event.target.parentNode.id);
     const targetItem = data.customCatalogue.filter((card) => {
-      return card.id === Number(event.target.parentNode.id);
+      return card.id === Number(targetId);
     });
-    // Check if the item already exist, if yet, increament the count with the reccent count.
+    // Check if the cart contains the item. if yes, Remove it.
+    setCart((prev) => prev.filter(([item]) => item.id !== targetId));
     const newItem = [targetItem[0], count];
     setCart((prev) => [...prev, newItem]);
   };
