@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Dialog } from '@reach/dialog';
 import '@reach/dialog/styles.css';
+import { CartContext } from '../App';
+import CartCard from './CartCard';
 
 function Modal() {
   let navigate = useNavigate();
@@ -15,11 +17,19 @@ function Modal() {
     navigate(-1);
   }
 
+  const { cart } = useContext(CartContext);
+
   return (
     <Dialog aria-labelledby="label" onDismiss={onDismiss}>
       <div className="modal-content">
         <h1>Your Shopping Cart</h1>
-        <div>Insert cards of checkout products here</div>
+        <div>
+          {cart.length
+            ? cart.map(([card, count]) => {
+                return <CartCard card={card} count={count} />;
+              })
+            : null}
+        </div>
         <h2>Total: ₦ {5000}</h2>
         <button onClick={onCheckOut}>Checkout</button>
         <button onClick={onDismiss}>Close</button>
