@@ -8,8 +8,8 @@ function Shirts() {
   });
   return (
     <section className="cards">
-      {shirts.map((card, id) => {
-        return <Card card={card} id={id} key={id} />;
+      {shirts.map((card) => {
+        return <Card card={card} id={card.id} key={card.id} />;
       })}
     </section>
   );

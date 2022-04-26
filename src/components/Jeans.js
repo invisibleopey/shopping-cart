@@ -8,8 +8,8 @@ function Jeans() {
   });
   return (
     <section className="cards">
-      {jeans.map((card, id) => {
-        return <Card card={card} id={id} key={id} />;
+      {jeans.map((card) => {
+        return <Card card={card} id={card.id} key={card.id} />;
       })}
     </section>
   );

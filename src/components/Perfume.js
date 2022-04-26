@@ -8,8 +8,8 @@ function Perfume() {
   });
   return (
     <section className="cards">
-      {perfume.map((card, id) => {
-        return <Card card={card} id={id} key={id} />;
+      {perfume.map((card) => {
+        return <Card card={card} id={card.id} key={card.id} />;
       })}
     </section>
   );
