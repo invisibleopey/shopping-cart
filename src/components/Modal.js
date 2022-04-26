@@ -25,8 +25,8 @@ function Modal() {
         <h1>Your Shopping Cart</h1>
         <div>
           {cart.length
-            ? cart.map(([card, count]) => {
-                return <CartCard card={card} count={count} />;
+            ? cart.map(([card, count], index) => {
+                return <CartCard card={card} count={count} key={index} />;
               })
             : null}
         </div>
