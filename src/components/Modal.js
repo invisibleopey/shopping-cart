@@ -17,6 +17,12 @@ function Modal() {
     navigate(-1);
   }
 
+  const calculateGrandTotal = (cart) => {
+    let individualPrices = [];
+    cart.forEach((item) => individualPrices.push(item[0].price * item[1]));
+    return individualPrices.reduce((prev, current) => prev + current, 0).toLocaleString();
+  };
+
   const { cart } = useContext(CartContext);
 
   return (
@@ -30,7 +36,7 @@ function Modal() {
               })
             : null}
         </div>
-        <h2>Total: ₦ {5000}</h2>
+        <h2>Total: ₦ {cart.length ? calculateGrandTotal(cart) : 0}</h2>
         <button onClick={onCheckOut}>Checkout</button>
         <button onClick={onDismiss}>Close</button>
       </div>
