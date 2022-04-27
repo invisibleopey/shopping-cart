@@ -31,7 +31,11 @@ const App = () => {
     setCart((prev) => [...prev, newItem]);
   };
 
-  const contextValue = useMemo(() => ({ cart, addToCart }), [cart]);
+  const clearCart = () => {
+    setCart([]);
+  };
+
+  const contextValue = useMemo(() => ({ cart, addToCart, clearCart }), [cart]);
 
   return (
     <div className="App">
