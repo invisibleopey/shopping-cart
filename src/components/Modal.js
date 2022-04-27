@@ -7,10 +7,13 @@ import CartCard from './CartCard';
 
 function Modal() {
   let navigate = useNavigate();
+  const { cart } = useContext(CartContext);
+  const { clearCart } = useContext(CartContext);
 
   const onCheckOut = () => {
-    // Remove all the products in the array.
-    // Close the modal
+    clearCart();
+    navigate(-1);
+    alert('Thanks for shopping with us');
   };
 
   function onDismiss() {
@@ -22,8 +25,6 @@ function Modal() {
     cart.forEach((item) => individualPrices.push(item[0].price * item[1]));
     return individualPrices.reduce((prev, current) => prev + current, 0).toLocaleString();
   };
-
-  const { cart } = useContext(CartContext);
 
   return (
     <Dialog aria-labelledby="label" onDismiss={onDismiss}>
