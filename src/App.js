@@ -1,4 +1,4 @@
-import React, { useState, createContext, useMemo } from 'react';
+import React, { useState, createContext, useMemo, useCallback } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
@@ -35,7 +35,43 @@ const App = () => {
     setCart([]);
   };
 
-  const contextValue = useMemo(() => ({ cart, addToCart, clearCart }), [cart]);
+  const modifyCount = useCallback(
+    (event, action) => {
+      const targetId = Number(event.target.parentNode.parentNode.id);
+      let newCount;
+      let prevCount;
+      let targetElement;
+      // Select the item with the corresponding id. Modify the count. The return the whole array.
+      targetElement = cart.filter((item) => {
+        return item[0].id === targetId;
+      });
+      prevCount = targetElement[0][1];
+      switch (action) {
+        case 'increase':
+          newCount = prevCount + 1;
+          break;
+
+        case 'decrease':
+          newCount = prevCount - 1;
+          break;
+        default:
+          newCount = prevCount;
+          break;
+      }
+      // Remove the first version of the item
+      setCart((prev) => prev.filter(([item]) => item.id !== targetId));
+      // If the count is reduced to zero. remove the item totally from cart
+      if (newCount <= 0) return;
+      const newItem = [targetElement[0][0], newCount];
+      setCart((prev) => [...prev, newItem]);
+    },
+    [cart],
+  );
+
+  const contextValue = useMemo(
+    () => ({ cart, addToCart, clearCart, modifyCount }),
+    [cart, modifyCount],
+  );
 
   return (
     <div className="App">
