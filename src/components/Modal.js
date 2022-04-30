@@ -33,7 +33,7 @@ function Modal() {
         <div>
           {cart.length
             ? cart.map(([card, count], index) => {
-                return <CartCard card={card} count={count} key={index} />;
+                return <CartCard card={card} count={count} key={index} id={card.id} />;
               })
             : null}
         </div>
