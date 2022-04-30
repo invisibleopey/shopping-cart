@@ -31,11 +31,22 @@ function Modal() {
       <div className="modal-content">
         <h1>Your Shopping Cart</h1>
         <div>
-          {cart.length
-            ? cart.map(([card, count], index) => {
-                return <CartCard card={card} count={count} key={index} id={card.id} />;
-              })
-            : null}
+          {cart.length ? (
+            cart.map(([card, count], index) => {
+              return <CartCard card={card} count={count} key={index} id={card.id} />;
+            })
+          ) : (
+            <div>
+              <h2>Your cart is empty</h2>
+              <button
+                onClick={() => {
+                  navigate('/shop');
+                }}
+              >
+                Shop Now
+              </button>
+            </div>
+          )}
         </div>
         <h2>Total: ₦ {cart.length ? calculateGrandTotal(cart) : 0}</h2>
         <button onClick={onCheckOut}>Checkout</button>
