@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from '../App';
 
 function CartCard(props) {
   const calculateItemPrice = (price, count) => {
     const totalPrice = price * count;
     return `₦${totalPrice.toLocaleString()}`;
   };
+  const { modifyCount } = useContext(CartContext);
+
+  const handleIncrement = (event) => {
+    modifyCount(event, 'increase');
+  };
+
+  const handleDecrement = (event) => {
+    modifyCount(event, 'decrease');
+  };
+
   return (
     <div className="cart-item" id={props.card.id}>
       <img src={window.location.origin + props.card.url} alt={props.card.alt} />
       <span className="cart-item-title">{props.card.title}</span>
       <span className="cart-item-price">{calculateItemPrice(props.card.price, props.count)}</span>
       <div>
-        {/* Implement the functionalities of these buttons */}
-        <button>-</button>
+        <button onClick={handleDecrement}>-</button>
         <span>{props.count}</span>
-        <button>+</button>
+        <button onClick={handleIncrement}>+</button>
       </div>
     </div>
   );
