@@ -24,4 +24,14 @@ describe('shop card component', () => {
     const tittle = screen.getByText(/Unisex Double-Sided Reersible Bucket Hat Black-White/i);
     expect(tittle).toBeInTheDocument();
   });
+
+  it('renders correct image', () => {
+    render(
+      <CartContext.Provider value={{ addToCart }}>
+        <Card card={card} />
+      </CartContext.Provider>,
+    );
+    const image = screen.getByAltText('black and white bucket hat');
+    expect(image).toHaveAttribute('src', 'http://localhost/catalogue/bucket-hat.jpg');
+  });
 });
