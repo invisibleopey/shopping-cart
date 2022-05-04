@@ -49,7 +49,7 @@ function Modal() {
           )}
         </div>
         <h2>Total: ₦ {cart.length ? calculateGrandTotal(cart) : 0}</h2>
-        <button onClick={onCheckOut}>Checkout</button>
+        {cart.length ? <button onClick={onCheckOut}>Checkout</button> : null}
         <button onClick={onDismiss}>Close</button>
       </div>
     </Dialog>
