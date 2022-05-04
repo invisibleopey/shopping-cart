@@ -34,4 +34,14 @@ describe('shop card component', () => {
     const image = screen.getByAltText('black and white bucket hat');
     expect(image).toHaveAttribute('src', 'http://localhost/catalogue/bucket-hat.jpg');
   });
+
+  it('renders the correct price', () => {
+    render(
+      <CartContext.Provider value={{ addToCart }}>
+        <Card card={card} />
+      </CartContext.Provider>,
+    );
+    const price = screen.getByText(/2,899/i);
+    expect(price).toBeInTheDocument();
+  });
 });
