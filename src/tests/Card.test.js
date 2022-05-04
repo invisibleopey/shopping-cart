@@ -44,4 +44,17 @@ describe('shop card component', () => {
     const price = screen.getByText(/2,899/i);
     expect(price).toBeInTheDocument();
   });
+
+  it('callback called when add to cart button is clicked', async () => {
+    render(
+      <CartContext.Provider value={{ addToCart }}>
+        <Card card={card} />
+      </CartContext.Provider>,
+    );
+
+    const submitItemButton = screen.getByText(/Add to Cart/i);
+
+    await userEvent.click(submitItemButton);
+    expect(addToCart).toHaveBeenCalled();
+  });
 });
