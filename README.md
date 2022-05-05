@@ -1,4 +1,4 @@
-# React Memory Card Game
+# React Shopping Cart
 
 Part of The Odin's Project's [curriculum](https://www.theodinproject.com/lessons/node-path-javascript-shopping-cart).
 
