@@ -17,6 +17,7 @@
       color: $secondary-color;
       font-size: 1.5rem;
       padding: 8px 32px;
+      width: 200px;
       border: none;
       border-radius: 10px;
       cursor: pointer;
@@ -33,6 +34,7 @@
         margin: auto;
       }
       button {
+        width: auto;
         font-size: 1rem;
         padding: 5px 7px;
       }
@@ -65,7 +67,7 @@
 
 @media screen and (max-width: 480px) {
   [data-reach-dialog-content] {
-    width: 100vw !important;
+    width: 85vw !important;
     position: relative;
   }
 }
