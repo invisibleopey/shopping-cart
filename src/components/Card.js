@@ -27,7 +27,7 @@ function Card(props) {
 
   return (
     <div className="card" id={props.card.id}>
-      <img src={window.location.origin + props.card.url} alt={props.card.alt} />
+      <img src={process.env.PUBLIC_URL + props.card.url} alt={props.card.alt} />
       <span className="product-title">{props.card.title}</span>
       <span className="product-price">{`₦${props.card.price.toLocaleString()}`}</span>
       <div>
